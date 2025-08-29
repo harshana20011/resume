@@ -3,9 +3,30 @@
 <head>
   <meta charset="utf-8">
   <title>CV de Harshana</title>
-  <style> * { margin: 0; padding: 0; } </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Sur mobile : hauteur fixe + scroll vertical */
+    @media (max-width: 768px) {
+      iframe {
+        height: 90vh;  /* prend 90% de la hauteur visible */
+      }
+    }
+  </style>
 </head>
 <body>
-  <iframe src="cv_hr_2024_en.pdf" width="100%" height="100vh" style="border: none;"></iframe>
+  <iframe src="cv_hr_2024_en.pdf"></iframe>
 </body>
 </html>
